@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border:border-box;
+    /*Good practise to write border-box: it will adjust the content inside the border  */
+}
+/*Width * Height  */
+
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    /* content will be space evenly along the main axis */
+}
+
+.nav-logo{  
+    height:50px;
+    width:100px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height:50px;
+    width:100%;
+}
+
+.border{
+    border:2px solid transparent;
+}
+
+.border:hover{
+    border:2px solid white;
+}
+
+.add-first{
+    color:white;
+    font-size: 0.7rem;
+    /* Instead of adding in pixels , we have added it in 'rem' to make it responsive */
+    margin-left:13px;
+}
+
+.add-second{
+    font-size:1 rem;
+}
+
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+
+/*  BOX 3*/
+.nav-search{
+    background-color: white;
+    height:38px;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3px;
+}
+
+.search-icon{
+    display: flex;
+    background-color: rgb(183, 73, 33);
+    justify-content: center;
+}
+
+.search-input{
+    width:100%;
+    /* occupy the full area due to flex display */
+    font-size:1rem;
+}
+
+.search-select{
+    background-color: #ffffff;
+    width: 50px;
+    text-align: center;
+    border-bottom-left-radius:4px;
+    border-top-left-radius: 4px;
+    border:none;
+
+}
+
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.2rem;
+    background-color:orange;
+    border-top-right-radius:4px;
+    border-bottom-right-radius: 4px;
+    color:black;
+
+}
+
+.nav-search:hover{
+    border:2px solid orange;
+}
+
+/** BOX 4 **/
+
+span{
+    font-size: 0.8rem;
+
+}
+
+.nav-second{
+    font-size:0.9rem;
+    font-weight: 700;
+}
+
+/**  BOX 6 **/
+.nav-cart i{    /* Appling only to the i selector*/
+    font-size:27px;
+}
+
+.nav-cart{
+    font-size: 0.9rem;
+    font-weight :700;
+    /* weight is responsible for boldness of text */
+}
+
+/** Panel **/
+
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display:flex;
+    align-items:center;
+    /* Aligning items vertically */
+    color:white;
+    justify-content: space-evenly;
+
+}
+
+.panel-options  p{
+    display:inline;
+    margin-left: 15px;
+}
+
+.panel-options{
+    width:70%;
+    font-size: 0.95rem;
+    justify-content:space-evenly;
+}
+
+.panel-deals{
+    font-size:0.95rem;
+}
+
+/** Hero Section**/
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    height:350px;
+    display: flex;
+    align-items: flex-end;/* Along cross axis*/
+    justify-content: center; /* Along main axis*/
+    
+    
+}
+
+.hero-mes{
+    background-color: white;
+    color:black;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items to put vertically in center */
+    font-size:0.9rem;
+    width:85%;
+    margin-bottom: 25px;
+    
+}
+
+.hero-mes a{
+    color:#007185;
+    margin: none;
+    border-bottom:none;
+    text-decoration: none;
+    
+}
+
+/** Shop section **/
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#e2e7e6;
+    flex-wrap: wrap;
+}
+
+.box{
+    height:400px;
+    width:23%;
+    background-color: white;
+    padding:20px 0px 15px;
+    margin-top: 15px;
+    
+}
+
+.box-img{
+    height:300px;
+    display: cover;
+    background-size: cover;
+    background-image: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.box p{
+    color:#007185;
+}
+
+.box-content{
+    margin-left:1rem;
+    margin-right:15px;
+}
+
+/** Footer **/
+footer{
+    margin-top:15px;
+}
+.foot-panel{
+    background-color: #37475a;
+    color:white;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* Along cross axis : from top to bottom */
+    font-size:0.85rem;
+}
+
+.foot-panel2{
+    background-color:#222f3d;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    height:300px;
+}
+
+.foot-panel2 a{
+    display: flex;
+    
+    font-size:0.85rem;
+    color:#dddddd;
+    margin-top:10px;
+    text-decoration: none;
+    
+}
+ul p{
+   margin-top:20px; 
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color:white;
+    border: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Alogo{
+    background-image:url(amazon_logo.png);
+    height:50px;
+    width:100px;
+    background-size:cover;
+}
+
+.foot-panel4{
+    background-color:#0f1111;
+    color:white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    
+}
+
+.foot-panel4 a{
+    color: white;
+    text-decoration:none;
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+    }
+
